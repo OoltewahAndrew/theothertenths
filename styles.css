@@ -82,13 +82,13 @@ nav a {
 }
 
 /* HERO IMAGE FRAME */
-.hero-media {
-  aspect-ratio: 16 / 10;
-  border-radius: 26px;
-  overflow: hidden;     /* prevents bleed/overlap */
-  border: 1px solid #eee;
-  background: #f3f3f3;
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;  /* raises crop so face stays centered */
 }
+
 
 /* GRID */
 .grid {
