@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tenths Strategy</title>
-  <meta name="description" content="Tenths Strategy — strategic growth and modern digital experiences." />
+  <title>Tenths</title>
 
+  <!-- IMPORTANT: relative path -->
   <link rel="stylesheet" href="./styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,252 +13,77 @@
 </head>
 
 <body>
-  <!-- Top Nav -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./">Tenths</a>
-
-      <nav class="nav">
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">Tenths</div>
+      <nav>
         <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-
-      <a class="btn btn-primary header-cta" href="#contact">Start a project</a>
     </div>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="section hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Tenths Strategy</p>
-          <h1>Strategic growth, designed to convert.</h1>
-          <p class="lead">
-            We help small teams and ambitious brands clarify positioning, build modern sites,
-            and launch with confidence.
-          </p>
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Strategic Growth.<br>Designed to Convert.</h1>
+      <p>We build modern brands and high-converting digital experiences.</p>
+      <a class="button" href="#work">View Work</a>
+    </div>
 
-          <div class="actions">
-            <a class="btn btn-primary" href="#work">View work</a>
-            <a class="btn btn-ghost" href="#services">See services</a>
-          </div>
+    <div class="hero-media">
+      <!-- IMPORTANT: relative path + folder name must match -->
+      <img src="./assets/hero.jpg" alt="Hero" />
+    </div>
+  </section>
 
-          <div class="metrics">
-            <div class="metric">
-              <div class="metric-num">2–4</div>
-              <div class="metric-label">weeks to launch</div>
-            </div>
-            <div class="metric">
-              <div class="metric-num">3</div>
-              <div class="metric-label">core offers</div>
-            </div>
-            <div class="metric">
-              <div class="metric-num">100%</div>
-              <div class="metric-label">responsive</div>
-            </div>
-          </div>
+  <section id="work" class="container section">
+    <h2>Selected Work</h2>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-media">
+          <img src="./assets/project1.jpg" alt="Project One" />
         </div>
-
-        <div class="hero-media frame">
-          <img src="./assets/hero.jpg" alt="Brand and web design collage" />
-        </div>
+        <h3>Project One</h3>
+        <p>Brand identity &amp; digital launch.</p>
       </div>
-    </section>
 
-    <!-- Work -->
-    <section id="work" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Selected work</h2>
-          <p>Clean, focused case studies that show outcomes and craft.</p>
+      <div class="card">
+        <div class="card-media">
+          <img src="./assets/project2.jpg" alt="Project Two" />
         </div>
-
-        <div class="grid cards">
-          <article class="card">
-            <div class="frame card-media">
-              <img src="./assets/project1.jpg" alt="Project One preview" />
-            </div>
-            <h3>Project One</h3>
-            <p>Brand identity + website system.</p>
-          </article>
-
-          <article class="card">
-            <div class="frame card-media">
-              <img src="./assets/project2.jpg" alt="Project Two preview" />
-            </div>
-            <h3>Project Two</h3>
-            <p>Conversion-first redesign + messaging.</p>
-          </article>
-
-          <article class="card">
-            <div class="frame card-media">
-              <img src="./assets/project3.jpg" alt="Project Three preview" />
-            </div>
-            <h3>Project Three</h3>
-            <p>Positioning, UX, and launch support.</p>
-          </article>
-        </div>
+        <h3>Project Two</h3>
+        <p>Conversion-focused redesign.</p>
       </div>
-    </section>
 
-    <!-- Services -->
-    <section id="services" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Services</h2>
-          <p>Simple packages that map to how you actually build and grow.</p>
+      <div class="card">
+        <div class="card-media">
+          <img src="./assets/project3.jpg" alt="Project Three" />
         </div>
-
-        <div class="grid services">
-          <div class="panel">
-            <h3>Strategy</h3>
-            <ul class="list">
-              <li>Positioning + offer clarity</li>
-              <li>Messaging + page architecture</li>
-              <li>Content + launch plan</li>
-            </ul>
-          </div>
-
-          <div class="panel">
-            <h3>Design</h3>
-            <ul class="list">
-              <li>Visual direction + brand system</li>
-              <li>UI kit + components</li>
-              <li>Prototype-ready layouts</li>
-            </ul>
-          </div>
-
-          <div class="panel">
-            <h3>Build</h3>
-            <ul class="list">
-              <li>Fast, responsive site</li>
-              <li>SEO basics + analytics</li>
-              <li>Deploy on GitHub Pages</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process -->
-    <section id="process" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Process</h2>
-          <p>A clear path from “messy” to “live.”</p>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step-badge">01</div>
-            <div>
-              <h3>Define</h3>
-              <p>Goals, audience, messaging, and site map.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-badge">02</div>
-            <div>
-              <h3>Design</h3>
-              <p>Hero concept, section system, and visual language.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-badge">03</div>
-            <div>
-              <h3>Build</h3>
-              <p>Responsive layout + performance-focused implementation.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-badge">04</div>
-            <div>
-              <h3>Launch</h3>
-              <p>QA, accessibility pass, and GitHub Pages deploy.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>What clients say</h2>
-          <p>Short, credible, no-fluff proof.</p>
-        </div>
-
-        <div class="grid testimonials">
-          <figure class="quote">
-            <blockquote>“The site finally feels premium and clear. We got leads the first week.”</blockquote>
-            <figcaption>— Client Name, Company</figcaption>
-          </figure>
-          <figure class="quote">
-            <blockquote>“Fast, thoughtful, and the messaging landed exactly where we needed it.”</blockquote>
-            <figcaption>— Client Name, Company</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section">
-      <div class="container cta">
-        <div>
-          <h2>Ready to tighten your brand and ship the site?</h2>
-          <p>Send a quick note — we’ll reply with next steps and a simple timeline.</p>
-        </div>
-        <a class="btn btn-primary" href="#contact">Contact</a>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p>Drop your email and a sentence about what you’re building.</p>
-        </div>
-
-        <!-- NOTE: GitHub Pages can't run server code. This is a placeholder form.
-             Use Formspree / Netlify Forms later if you want submissions. -->
-        <form class="form" action="#" method="post">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@email.com" />
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="5" placeholder="What do you need help with?"></textarea>
-          </label>
-          <button class="btn btn-primary" type="submit">Send</button>
-          <p class="fineprint">Form is currently non-functional on GitHub Pages unless you connect a form provider.</p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Tenths Strategy</p>
-      <div class="footer-links">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <h3>Project Three</h3>
+        <p>Strategic positioning &amp; UX.</p>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <!-- “Missing sections” that most mock concepts include -->
+  <section id="about" class="container section">
+    <h2>About</h2>
+    <p class="muted" style="max-width: 70ch;">
+      Tenths helps brands clarify their offer, design a clean system, and ship a site that converts.
+    </p>
+  </section>
+
+  <section id="contact" class="container section">
+    <h2>Contact</h2>
+    <p class="muted">Email: <a href="mailto:hello@tenths.com">hello@tenths.com</a></p>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Tenths Strategy</p>
+    </div>
+  </footer>
 </body>
 </html>
