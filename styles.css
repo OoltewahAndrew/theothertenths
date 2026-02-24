@@ -89,26 +89,39 @@ nav a {
   object-position: 50% 25%;  /* raises crop so face stays centered */
 }
 
-
-/* GRID */
+/* WORK GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
 }
 
 /* CARD */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .card-media {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;      /* square feels cleaner for this kind of content */
   border-radius: 18px;
-  overflow: hidden;   /* prevents image cutting through */
+  overflow: hidden;
   border: 1px solid #eee;
   background: #f3f3f3;
 }
 
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
+}
+
 .card h3 {
-  margin-top: 15px;
-  margin-bottom: 6px;
+  margin: 8px 0 0;
+  font-size: 18px;
 }
 
 .card p {
@@ -116,6 +129,13 @@ nav a {
   color: #666;
 }
 
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}
 .muted {
   color: #555;
 }
